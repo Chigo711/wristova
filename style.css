@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --color-primary: #00b9b3;
+  --color-secondary: #50e3c2;
+  --color-background: #f5f7fa;
+  --color-text: #4a4a4a;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-large) 7%;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 600;
+  padding: 0 var(--spacing-medium);
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+/* Hero Section Styling Starts Here */
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 10;
+
+  /* padding: var(--spacing-large) 0%; */
+  gap: 5rem;
+}
+
+.heroContent {
+  flex: 1 1 70%;
+  padding: 0 7%;
+}
+
+.heroText {
+  width: 80%;
+}
+
+.heroText h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-large);
+  font-family: var(--font-family);
+}
+
+/* From here  */
+.heroText p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-large);
+  line-height: 1.6;
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.heroText span {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+.heroText h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff9501;
+  margin-bottom: var(--spacing-large);
+  font-family: var(--font-family);
+}
+/* To Here */
+
+.heroImage {
+  flex: 1 1 30%;
+  background: #ff9501;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage img {
+  width: 100%;
+  padding-block: 5rem;
+  margin-inline: auto;
+}
+
+.heroButtons {
+  display: flex;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-large);
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.discoverBtn {
+  border: 1px solid #ff9501;
+  background: transparent;
+  color: #ff9501;
+}
+.shopNowBtn {
+  background: #ff9501;
+}
