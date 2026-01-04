@@ -164,6 +164,7 @@
   color: var(--color-text);
   margin-bottom: var(--spacing-large);
   font-family: var(--font-family);
+  position: relative;
 }
 
 .sectionTitle ul {
@@ -194,4 +195,44 @@
   color: inherit;
 }
 
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  padding: var(--spacing-large);
+}
+
+.display-card {
+  background: #fff;
+  padding: var(--spacing-large);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-details {
+  text-align: center;
+  margin-top: var(--spacing-medium);
+  font-family: var(--font-family);
+}
+.pagination {
+  position: absolute;
+  top: 2rem;
+  right: 10%;
+}
+
+.pagination-btn {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 var(--spacing-small);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination .active {
+  color: var(--color-primary);
+}
 /* FEATURES SECTION STYLING ENDS HERE */
