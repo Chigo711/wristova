@@ -40,6 +40,14 @@
   top: 0;
 }
 
+#navbar.scrolled {
+  background-color: #f9f9f9;
+}
+
+/* #navbar.scrolled .nav-links .link {
+  color: white;
+} */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -71,6 +79,7 @@
   border-radius: 5px;
   font-weight: 600;
   font-family: var(--font-family);
+  cursor: pointer;
 }
 
 .signup {
@@ -304,6 +313,18 @@
   color: var(--color-primary);
   text-decoration: line-through;
   font-weight: 600;
+}
+
+.rec-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+  background: var(--color-primary);
 }
 
 .display-image {
